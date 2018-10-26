@@ -12,7 +12,7 @@ import { RdHomeComponent } from './components/rd-home/rd-home.component';
 // ];
 
 const routes: Routes = [
-  { path: '', component: RdHomeComponent pathMatch: 'full' },
+  { path: '', component: RdHomeComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
