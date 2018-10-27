@@ -13,9 +13,9 @@ export class RdHomeComponent implements OnInit {
     }
 
     syncPosts() {
-        // this.rdPost.getPosts('videos').subscribe();
         this.rdPost.getPosts({
-            subreddit: 'videos'
+            subreddit: 'videos',
+            sort: 'new'
         }).subscribe((posts) => {
             console.info('Synched Posts', posts);
             this.posts = posts.data.children;

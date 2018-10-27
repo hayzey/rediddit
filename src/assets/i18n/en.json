@@ -1,0 +1,5 @@
+{
+    "LIST_POST_COMMENTS_AMOUNT_NONE": "No comments yet",
+    "LIST_POST_COMMENTS_AMOUNT_SINGLE": "1 comment",
+    "LIST_POST_COMMENTS_AMOUNT_PLURAL": "{{amount}} comments"
+}

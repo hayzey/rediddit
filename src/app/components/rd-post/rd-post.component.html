@@ -1,4 +1,20 @@
 <mat-card>
     <h3 class="mat-h3">{{getPost().title}}</h3>
-    <p class="mat-body-1">{{getPost().num_comments}}</p>
+
+    <p *ngIf="getPost().num_comments === 0"
+        class="mat-body-1"
+        translate>
+        LIST_POST_COMMENTS_AMOUNT_NONE
+    </p>
+    <p *ngIf="getPost().num_comments === 1"
+        class="mat-body-1"
+        translate>
+        LIST_POST_COMMENTS_AMOUNT_SINGLE
+    </p>
+    <p *ngIf="getPost().num_comments > 1"
+        class="mat-body-1"
+        translate
+        [translateParams]="{amount: getPost().num_comments}">
+        LIST_POST_COMMENTS_AMOUNT_PLURAL
+    </p>
 </mat-card>
