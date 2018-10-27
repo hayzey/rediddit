@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./rd-post-list.component.scss']
 })
 export class RdPostListComponent implements OnInit {
-  @Input() posts: Array;
+  @Input() posts: Array<Object>;
 
   constructor() { }
 
