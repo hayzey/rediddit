@@ -1,16 +1,20 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'rd-post',
-  templateUrl: './rd-post.component.html',
-  styleUrls: ['./rd-post.component.scss']
+    selector: 'rd-post',
+    templateUrl: './rd-post.component.html',
+    styleUrls: ['./rd-post.component.scss']
 })
 export class RdPostComponent implements OnInit {
-  @Input() post: Object;
+    @Input() post: Object;
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    getPost() {
+        return this.post.data;
+    }
+
+    ngOnInit() {
+    }
 
 }
