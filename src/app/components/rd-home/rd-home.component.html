@@ -1,1 +1,5 @@
 <rd-post-list [posts]="posts"></rd-post-list>
+
+<div class="loader-container">
+    <mat-spinner *ngIf="loadingPosts" [diameter]="60"></mat-spinner>
+</div>

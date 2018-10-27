@@ -10,6 +10,8 @@ export class RdPostComponent implements OnInit {
 
     constructor() { }
 
+    openPost() {}
+
     getPost() {
         return this.post.data;
     }
