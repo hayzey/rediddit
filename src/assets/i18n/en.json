@@ -2,5 +2,16 @@
     "LIST_POST_COMMENTS_AMOUNT_NONE": "No comments yet",
     "LIST_POST_COMMENTS_AMOUNT_SINGLE": "1 comment",
     "LIST_POST_COMMENTS_AMOUNT_PLURAL": "{{amount}} comments",
-    "LIST_POST_AUTHOR": "Posted by {{author}}"
+    "LIST_POST_AUTHOR": "Posted by {{author}}",
+    "USER_MENU_REGISTER": "Register",
+    "USER_MENU_LOG_IN": "Log In",
+    "SUBREDDIT_NAME_DIRECT_INPUT_LABEL": "Subreddit",
+    "POST_SORT_SELECT_LABEL": "Sort",
+    "POST_SORT_OPTION_BEST": "Best",
+    "POST_SORT_OPTION_HOT": "Hot",
+    "POST_SORT_OPTION_NEW": "New",
+    "POST_SORT_OPTION_TOP": "Top",
+    "POST_SORT_OPTION_RISING": "Rising",
+    "POST_SORT_OPTION_RANDOM": "Random",
+    "POST_SORT_OPTION_CONTROVERSIAL": "Controversial"
 }
