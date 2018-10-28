@@ -19,7 +19,7 @@ export class RdHomeComponent implements OnInit {
         this.rdPost.getPosts({
             subreddit: 'videos',
             sort: 'new'
-        }).subscribe((posts) => {
+        }).subscribe((posts: { data: { children: Array<Object> } }) => {
             console.info('Synched Posts', posts);
             this.posts = posts.data.children;
             this.loadingPosts = false;

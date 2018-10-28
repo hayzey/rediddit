@@ -1,12 +1,12 @@
 <mat-card>
     <mat-card-title>
         <h3 class="mat-h3">
-            <a (click)="openPost()">{{getPost().title}}</a>
+            <a href="{{getPost().url}}">{{getPost().title}}</a>
         </h3>
     </mat-card-title>
 
     <mat-card-actions>
-        <button mat-button>
+        <button mat-button color="primary">
             <span *ngIf="getPost().num_comments === 0" translate>
                 LIST_POST_COMMENTS_AMOUNT_NONE
             </span>

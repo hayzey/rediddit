@@ -12,8 +12,8 @@ export class RdPostService {
 
     }
 
-    // getPosts(subreddit: string = 'all', sort: string = 'top') {
-    getPosts({ subreddit = 'all', sort = 'hot' }: { subreddit: string, sort: string } = {}) {
+    // getPosts({ subreddit = 'all', sort = 'hot' }: { subreddit: string, sort: string } = {}) {
+    getPosts({ subreddit = 'all', sort = 'hot' }: { subreddit: string, sort: string }) {
         let url = `https://api.reddit.com/r/${subreddit}/${sort}/`;
 
         return this.http.get(url).pipe(
